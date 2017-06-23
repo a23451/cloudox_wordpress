@@ -1,0 +1,161 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+    color: #5a5a5a;
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+    height: 500px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+    z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+    height: 500px;
+    background-color: #777;
+}
+.carousel-inner > .item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 500px;
+}
+
+
+/* CUSTOMIZE THE Nav
+-------------------------------------------------- */
+#myNavigation {
+    font-size: 16px;
+}
+
+#myNavigation li a {
+    color: #000000;
+    background-color: #ffffff;
+} 
+
+.padding_0 {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.hover_piggy_img p {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 100%;
+	color: #ffffff;
+	-webkit-transition: -webkit-transform 0.2s, color 0.2s;
+	transition: transform 0.2s, color 0.2s;
+	-webkit-transform: translate3d(0,-50%,0);
+	transform: translate3d(0,-50%,0);
+}
+.hover_piggy_img:hover p {
+	color: #fff;
+	-webkit-transform: translate3d(0,-50%,0) translate3d(0,-10px,0);
+	transform: translate3d(0,-50%,0) translate3d(0,-10px,0);
+}
+
+.pig {
+    height: 126.5px;
+    text-align: center;
+}
+
+.pig a div {
+    border: 1px solid #EEEEEE;
+    height: 100%;
+}
+
+.pig img {
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.pig p {
+    font-size: 16px;
+    color: #757b7c;
+}
+
+.pig p:hover{
+	font-size: 16px;
+	color: #434647;
+}
+
+.pig a div:hover {
+    background-color: #f0f0ec;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 100px) {
+    /* Bump up size of carousel content */
+    .carousel-caption p {
+        margin-bottom: 20px;
+        font-size: 21px;
+        line-height: 1.4;
+    }
+  
+    .carousel {
+        height: 260px;
+    }
+
+    /* Declare heights because of positioning of img element */
+    .carousel .item {
+        height: 260px;
+    }
+    
+    .carousel-inner > .item > img {
+        height: 260px;
+    }
+    
+    #myNavigation .active {
+        border-left: 3px solid #f3565d;
+    }    
+}
+
+@media (min-width: 992px) {
+    .carousel {
+        height: 500px;
+    }
+
+    /* Declare heights because of positioning of img element */
+    .carousel .item {
+        height: 500px;
+    }
+    
+    .carousel-inner > .item > img {
+        height: 500px;
+    }
+    
+    #myNavigation .active {
+        border-bottom: 4px solid #f3565d;
+        border-left: 0px solid #f3565d;
+    }
+
+    #myNavigation li:hover {
+        border-bottom: 4px solid #f3565d;
+    }   
+    
+    #myNavigation li a:hover {
+        color: #f3565d;
+        background-color: #e7e7e7;
+    }     
+}
+
+
+
+
+
+
+
+ 
